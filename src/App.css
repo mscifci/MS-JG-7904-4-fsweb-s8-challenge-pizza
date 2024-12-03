@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%; /* Genişliği %100 yap */
+  margin: 0; /* Varsayılan margin'i kaldır */
+  padding: 0; /* Varsayılan padding'i kaldır */
   text-align: center;
 }
 
