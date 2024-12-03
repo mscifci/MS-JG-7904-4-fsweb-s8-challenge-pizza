@@ -14,31 +14,19 @@ Bu proje, kullanıcıların pizza siparişi vermesi için bir web uygulamasıdı
 Projenizi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
 
 1. **Depoyu Klonlayın**:
-
-   ```bash
+   
    git clone https://github.com/mscifci/MS-JG-7904-4-fsweb-s8-challenge-pizza.git
+
 2.  **Proje Dizine Girin**:
-    
-    bash
-    
-    Insert CodeEditCopy code
-    
+        
     `1cd teknolojik-yemekler`
 
 2.  **Bağımlılıkları Yükleyin**:
-    
-    bash
-    
-    Insert CodeEditCopy code
-    
+           
     `1npm  install`
     
 3.  **Geliştirme Sunucusunu Başlatın**:
-    
-    bash
-    
-    Insert CodeEditCopy code
-    
+          
     `1npm run dev`
     
 4.  **Tarayıcıda Açın**: Tarayıcınızda  `http://localhost:5173`  adresine gidin.

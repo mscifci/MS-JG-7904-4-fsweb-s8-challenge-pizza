@@ -13,7 +13,7 @@ function HomePage() {
             <span className="kod">KOD</span>
               <span> ACIKTIRIR</span>
               <span> </span>
-              <span className="pizza-doyurur">PİZZA,DOYURUR</span>
+              <span className="pizza-doyurur">PİZZA, DOYURUR</span>
             </h1>
             <button className="homepage-button">ACIKTIM</button>
           </div>
