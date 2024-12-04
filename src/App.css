@@ -14,7 +14,7 @@ html, body {
 
 
 .logo {
-  height: 6em;
+  height: 100%;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -50,12 +50,6 @@ html, body {
 }
 
 /* Homepage css içeriği*/
-
-html, body {
-  height: 100%;
-  margin: 0; 
-}
-
 .homepage-wrapper {
   position: relative;
   height: 100vh; 
@@ -137,23 +131,28 @@ html, body {
 .order-form-header {
   background-color: #CE2829; 
   width: 100%; 
-  height: auto; 
-  min-height: 60px;
+  min-height: 60px; /* Minimum yükseklik */
   display: flex; 
   flex-direction: column;
-  align-items: center; 
+  align-items: center; /* Logo ve nav öğelerini ortala */
   justify-content: center; 
-  padding: 10px; 
+  padding: 20px; 
+  padding-bottom: 20px; /* Nav ile arka plan arasında boşluk bırak */
   box-sizing: border-box; 
 }
 
 .order-form-nav {
-  padding-left: 20px;  /* Sol taraftan 613px boşluk */
-  padding-right: 20px; /* Sağ taraftan 613px boşluk */
+  padding-left: 500px;  /* Sol taraftan 20px boşluk */
+  padding-right: 20px; /* Sağ taraftan 20px boşluk */
   color: white; 
   font-size: 16px;
   text-align: left; /* Metni sola hizala */
-  width: 100%;/* Toplam genişlikten 613px soldan ve 613px sağdan çıkar */
+  width: 100%; /* Genişliği %100 yap */
+  box-sizing: border-box; /* Padding'in genişlik hesaplamalarına dahil edilmesini sağlar */
+  margin-top: 0; /* Header ile nav arasında boşluk bırakma */
+  padding-top: 10px; /* Üstten biraz boşluk bırak */
+  padding-bottom: 10px; /* Alttan biraz boşluk bırak */
+  background-color: #CE2829; /* Arka plan rengini kırmızı yap */
 }
 
 .bold-text {
@@ -163,7 +162,6 @@ html, body {
  .order-form-main {
   padding: 20px; /* İçerik alanının etrafında boşluk bırakır */
   color: black; /* Yazı rengini siyah yap */
-  overflow: auto; /* Taşan içerikleri gizlemek için */
   font-family: 'Barlow', sans-serif; /* Yazı tipini Barlow olarak ayarla */
   font-size: 16px;
   font-weight: normal; /* Regular ağırlık */
@@ -173,16 +171,18 @@ html, body {
   justify-content: flex-start; /* Üstten başlayarak yerleştir */
   height: calc(100vh - 60px); /* Header yüksekliğini çıkararak ayarla */
   box-sizing: border-box; /* Padding'in genişlik ve yükseklik hesaplamalarına dahil edilmesini sağlar */
-  padding-left: 613px;  /* Sol taraftan 613px boşluk */
-  padding-right: 613px; /* Sağ taraftan 613px boşluk */
+  padding-left: 500px;  /* Sol taraftan 500px boşluk */
+  padding-right: 500px; /* Sağ taraftan 500px boşluk */
   text-align: left;
-  
-
+  margin-top: 20px
 }
 
-.order-form-main h1 {
-  font-weight: 600; /* SemiBold için 600 değeri kullanılır */
-  font-size: 22px; /* Yazı boyutunu 22px olarak ayarla */
+.order-form-main h1,
+.order-form-main h3,
+.order-form-main h2 {
+  font-family: 'Barlow', sans-serif; /* Yazı tipi Barlow */
+  font-weight: 700; /* SemiBold */
+  font-size: 20px; /* Yazı boyutu 20px */
   margin: 0; /* Varsayılan margin değerini sıfırla */
 }
 
@@ -218,17 +218,26 @@ html, body {
   display: flex; /* Flexbox kullanarak yan yana hizala */
   justify-content: flex-start; /* Alanı eşit şekilde dağıt */
   align-items: flex-start;
-  margin-bottom: 20px; /* Altına boşluk ekle */
-  
+  margin-bottom: 20px; /* Altına boşluk ekle */  
+  width: 100%;
 }
 
 .size-options {
   display: flex; /* Flexbox kullanarak boyut seçeneklerini yan yana hizala */
   flex-direction: column; /* Seçenekleri dikey olarak hizala */
+  margin-bottom: 10px; 
+}
+
+.size-options label {
+  margin-bottom: 10px; /* Seçenekler arasında 10px boşluk bırak */
+}
+
+.size-options label:last-child {
+  margin-bottom: 0; /* Son öğenin altındaki boşluğu kaldır */
 }
 
 .selection-container > div {
-  margin-right: 50px; /* Seçenekler arasında sağdan boşluk bırak */
+  margin-right: 150px; /* Seçenekler arasında sağdan boşluk bırak */
   
 }
 

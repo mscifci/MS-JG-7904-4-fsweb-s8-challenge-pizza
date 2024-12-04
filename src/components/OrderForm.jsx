@@ -19,11 +19,12 @@ function OrderForm() {
                     className="logo" 
                     onClick={handleLogoClick} 
                 />
-                <nav className="order-form-nav">
-                    <span>Anasayfa</span> &gt; <span className="bold-text">Sipariş Oluştur</span>
-                </nav>
             </header>
+            <nav className="order-form-nav">
+                <span>Anasayfa</span> &gt; <span className="bold-text">Sipariş Oluştur</span>
+            </nav>
         
+            
             <main className="order-form-main">
                 <div>
                     <h1>Position Absolute Acı Pizza</h1>
@@ -51,7 +52,7 @@ function OrderForm() {
                             <input type="radio" name="size" value="Büyük" />
                             Büyük
                         </label>
-                    </div>
+                     </div>
                 </div>
 
                 <div>
@@ -65,9 +66,9 @@ function OrderForm() {
                     </select>
                 </div>
                 </div>
-                
+
                 <div>
-                    <h3>Ek Malzemeler:</h3>
+                    <h3>Ek Malzemeler</h3>
                     <label><input type="checkbox" /> Pepperoni</label>
                     <label><input type="checkbox" /> Sosis</label>
                     <label><input type="checkbox" /> Kanada Jambonu</label>
