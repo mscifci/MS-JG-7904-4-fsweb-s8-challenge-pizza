@@ -1,9 +1,17 @@
+html, body {
+  height: 100%;
+  margin: 0; 
+  overflow: auto; /* Sayfa taşmasını önlemek için */
+}
+
 #root {
   width: 100%; 
+  height: 100%;
   margin: 0;
   padding: 0; 
   text-align: center;
 }
+
 
 .logo {
   height: 6em;
@@ -124,6 +132,107 @@ html, body {
   position: relative; 
 }
 
+/* OrderForm sayfası*/
+
+.order-form-header {
+  background-color: #CE2829; 
+  width: 100%; 
+  height: auto; 
+  min-height: 60px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+
+.order-form-nav {
+  padding-left: 20px;  /* Sol taraftan 613px boşluk */
+  padding-right: 20px; /* Sağ taraftan 613px boşluk */
+  color: white; 
+  font-size: 16px;
+  text-align: left; /* Metni sola hizala */
+  width: 100%;/* Toplam genişlikten 613px soldan ve 613px sağdan çıkar */
+}
+
+.bold-text {
+  font-weight: bold; /* Yazıyı kalın yap */
+ }
+
+ .order-form-main {
+  padding: 20px; /* İçerik alanının etrafında boşluk bırakır */
+  color: black; /* Yazı rengini siyah yap */
+  overflow: auto; /* Taşan içerikleri gizlemek için */
+  font-family: 'Barlow', sans-serif; /* Yazı tipini Barlow olarak ayarla */
+  font-size: 16px;
+  font-weight: normal; /* Regular ağırlık */
+  display: flex; /* Flexbox kullanarak içerikleri düzenle */
+  flex-direction: column; /* Dikey olarak hizala */
+  align-items: center; /* Ortala */
+  justify-content: flex-start; /* Üstten başlayarak yerleştir */
+  height: calc(100vh - 60px); /* Header yüksekliğini çıkararak ayarla */
+  box-sizing: border-box; /* Padding'in genişlik ve yükseklik hesaplamalarına dahil edilmesini sağlar */
+  padding-left: 613px;  /* Sol taraftan 613px boşluk */
+  padding-right: 613px; /* Sağ taraftan 613px boşluk */
+  text-align: left;
+  
+
+}
+
+.order-form-main h1 {
+  font-weight: 600; /* SemiBold için 600 değeri kullanılır */
+  font-size: 22px; /* Yazı boyutunu 22px olarak ayarla */
+  margin: 0; /* Varsayılan margin değerini sıfırla */
+}
+
+.price-rating-container {
+  display: flex; /* Flexbox kullanarak öğeleri yan yana hizala */
+  align-items: center; /* Dikey olarak ortala */
+  margin: 10px 0; /* Üst ve alt boşluk ekle */
+}
+
+.price {
+  text-align: left; /* Fiyatı sola hizala */
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 28px;
+  
+}
+
+.rating {
+  text-align: center; /* Derecelendirmeyi ortala */
+  margin: 0 40px;
+  font-weight: normal;
+ 
+}
+
+.likes {
+  text-align: right; /* Beğeni sayısını sağa hizala */
+  margin-left: 0;
+  font-weight: normal;
+ 
+}
+
+.selection-container {
+  display: flex; /* Flexbox kullanarak yan yana hizala */
+  justify-content: flex-start; /* Alanı eşit şekilde dağıt */
+  align-items: flex-start;
+  margin-bottom: 20px; /* Altına boşluk ekle */
+  
+}
+
+.size-options {
+  display: flex; /* Flexbox kullanarak boyut seçeneklerini yan yana hizala */
+  flex-direction: column; /* Seçenekleri dikey olarak hizala */
+}
+
+.selection-container > div {
+  margin-right: 50px; /* Seçenekler arasında sağdan boşluk bırak */
+  
+}
+
+
 /* mobil görünüm ayarları */
 @media (max-width: 768px) {
   .homepage-logo {
@@ -155,6 +264,32 @@ html, body {
       display: block; 
       margin-top: 0.5em;
   }
+
+  .order-form-header {
+    height: 15vh; /* Mobil görünümde yükseklik azaltıldı */
+    
+  }
+
+  .order-form-nav {
+    padding-left: 20px;  /* Sol taraftan 20px boşluk */
+    padding-right: 20px; /* Sağ taraftan 20px boşluk */
+    width: calc(100% - 40px); /* Toplam genişlikten 20px soldan ve 20px sağdan çıkar */
+    font-size: 14px; /* Yazı boyutunu küçült */
+  }
+
+  .logo {
+    height: 4em; /* Mobil görünümde logo boyutu azaltıldı */
+  }
+
+  .order-form-main {
+    height: calc(85vh - 15vh); /* Header yüksekliğini çıkararak ayarla */
+    padding: 10px; /* Mobil görünümde padding azaltıldı */
+    overflow: auto;
+    padding-left: 20px;  /* Sol taraftan 20px boşluk */
+    padding-right: 20px; /* Sağ taraftan 20px boşluk */
+    text-align: left;
+  }
+
 }
 
 @media (min-width: 769px) {

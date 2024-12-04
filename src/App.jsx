@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Router'ı doğru şekilde içe aktarın
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import HomePage from './components/HomePage';
 import OrderForm from './components/OrderForm';
 
