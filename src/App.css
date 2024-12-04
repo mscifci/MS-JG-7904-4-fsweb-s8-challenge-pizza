@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0; 
-  overflow: auto; /* Sayfa taşmasını önlemek için */
+  overflow: auto;
 }
 
 #root {
@@ -131,48 +131,48 @@ html, body {
 .order-form-header {
   background-color: #CE2829; 
   width: 100%; 
-  min-height: 60px; /* Minimum yükseklik */
+  min-height: 60px; 
   display: flex; 
   flex-direction: column;
-  align-items: center; /* Logo ve nav öğelerini ortala */
+  align-items: center;
   justify-content: center; 
   padding: 20px; 
-  padding-bottom: 20px; /* Nav ile arka plan arasında boşluk bırak */
+  padding-bottom: 20px; 
   box-sizing: border-box; 
 }
 
 .order-form-nav {
-  padding-left: 500px;  /* Sol taraftan 20px boşluk */
-  padding-right: 20px; /* Sağ taraftan 20px boşluk */
+  padding-left: 500px;  
+  padding-right: 20px;
   color: white; 
   font-size: 16px;
-  text-align: left; /* Metni sola hizala */
-  width: 100%; /* Genişliği %100 yap */
-  box-sizing: border-box; /* Padding'in genişlik hesaplamalarına dahil edilmesini sağlar */
-  margin-top: 0; /* Header ile nav arasında boşluk bırakma */
-  padding-top: 10px; /* Üstten biraz boşluk bırak */
-  padding-bottom: 10px; /* Alttan biraz boşluk bırak */
-  background-color: #CE2829; /* Arka plan rengini kırmızı yap */
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box; 
+  margin-top: 0; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  background-color: #CE2829; 
 }
 
 .bold-text {
-  font-weight: bold; /* Yazıyı kalın yap */
+  font-weight: bold; 
  }
 
  .order-form-main {
-  padding: 20px; /* İçerik alanının etrafında boşluk bırakır */
-  color: black; /* Yazı rengini siyah yap */
-  font-family: 'Barlow', sans-serif; /* Yazı tipini Barlow olarak ayarla */
+  padding: 20px; 
+  color: black; 
+  font-family: 'Barlow', sans-serif;
   font-size: 16px;
-  font-weight: normal; /* Regular ağırlık */
-  display: flex; /* Flexbox kullanarak içerikleri düzenle */
-  flex-direction: column; /* Dikey olarak hizala */
-  align-items: center; /* Ortala */
-  justify-content: flex-start; /* Üstten başlayarak yerleştir */
-  height: calc(100vh - 60px); /* Header yüksekliğini çıkararak ayarla */
-  box-sizing: border-box; /* Padding'in genişlik ve yükseklik hesaplamalarına dahil edilmesini sağlar */
-  padding-left: 500px;  /* Sol taraftan 500px boşluk */
-  padding-right: 500px; /* Sağ taraftan 500px boşluk */
+  font-weight: normal; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start;
+  height: calc(100vh - 60px); 
+  box-sizing: border-box; 
+  padding-left: 500px; 
+  padding-right: 500px; 
   text-align: left;
   margin-top: 20px
 }
@@ -180,20 +180,20 @@ html, body {
 .order-form-main h1,
 .order-form-main h3,
 .order-form-main h2 {
-  font-family: 'Barlow', sans-serif; /* Yazı tipi Barlow */
-  font-weight: 700; /* SemiBold */
-  font-size: 20px; /* Yazı boyutu 20px */
-  margin: 0; /* Varsayılan margin değerini sıfırla */
+  font-family: 'Barlow', sans-serif; 
+  font-weight: 700; 
+  font-size: 20px;
+  margin: 0; 
 }
 
 .price-rating-container {
-  display: flex; /* Flexbox kullanarak öğeleri yan yana hizala */
-  align-items: center; /* Dikey olarak ortala */
-  margin: 10px 0; /* Üst ve alt boşluk ekle */
+  display: flex; 
+  align-items: center; 
+  margin: 10px 0; 
 }
 
 .price {
-  text-align: left; /* Fiyatı sola hizala */
+  text-align: left; 
   margin-right: auto;
   font-weight: bold;
   font-size: 28px;
@@ -201,43 +201,43 @@ html, body {
 }
 
 .rating {
-  text-align: center; /* Derecelendirmeyi ortala */
+  text-align: center; 
   margin: 0 40px;
   font-weight: normal;
  
 }
 
 .likes {
-  text-align: right; /* Beğeni sayısını sağa hizala */
+  text-align: right; 
   margin-left: 0;
   font-weight: normal;
  
 }
 
 .selection-container {
-  display: flex; /* Flexbox kullanarak yan yana hizala */
-  justify-content: flex-start; /* Alanı eşit şekilde dağıt */
+  display: flex; 
+  justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 20px; /* Altına boşluk ekle */  
+  margin-bottom: 20px; 
   width: 100%;
 }
 
 .size-options {
-  display: flex; /* Flexbox kullanarak boyut seçeneklerini yan yana hizala */
-  flex-direction: column; /* Seçenekleri dikey olarak hizala */
+  display: flex; 
+  flex-direction: column; 
   margin-bottom: 10px; 
 }
 
 .size-options label {
-  margin-bottom: 10px; /* Seçenekler arasında 10px boşluk bırak */
+  margin-bottom: 10px; 
 }
 
 .size-options label:last-child {
-  margin-bottom: 0; /* Son öğenin altındaki boşluğu kaldır */
+  margin-bottom: 0; 
 }
 
 .selection-container > div {
-  margin-right: 150px; /* Seçenekler arasında sağdan boşluk bırak */
+  margin-right: 150px; 
   
 }
 
@@ -275,27 +275,27 @@ html, body {
   }
 
   .order-form-header {
-    height: 15vh; /* Mobil görünümde yükseklik azaltıldı */
+    height: 15vh; 
     
   }
 
   .order-form-nav {
-    padding-left: 20px;  /* Sol taraftan 20px boşluk */
-    padding-right: 20px; /* Sağ taraftan 20px boşluk */
-    width: calc(100% - 40px); /* Toplam genişlikten 20px soldan ve 20px sağdan çıkar */
-    font-size: 14px; /* Yazı boyutunu küçült */
+    padding-left: 20px;  
+    padding-right: 20px; 
+    width: calc(100% - 40px); 
+    font-size: 14px; 
   }
 
   .logo {
-    height: 4em; /* Mobil görünümde logo boyutu azaltıldı */
+    height: 4em; 
   }
 
   .order-form-main {
-    height: calc(85vh - 15vh); /* Header yüksekliğini çıkararak ayarla */
-    padding: 10px; /* Mobil görünümde padding azaltıldı */
+    height: calc(85vh - 15vh); 
+    padding: 10px;
     overflow: auto;
-    padding-left: 20px;  /* Sol taraftan 20px boşluk */
-    padding-right: 20px; /* Sağ taraftan 20px boşluk */
+    padding-left: 20px;  
+    padding-right: 20px; 
     text-align: left;
   }
 
