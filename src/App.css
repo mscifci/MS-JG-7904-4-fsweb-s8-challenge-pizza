@@ -167,15 +167,65 @@ html, body {
   font-weight: normal; 
   display: flex; 
   flex-direction: column; 
-  align-items: center; 
+  align-items: flex-start; 
   justify-content: flex-start;
   height: calc(100vh - 60px); 
   box-sizing: border-box; 
   padding-left: 500px; 
   padding-right: 500px; 
   text-align: left;
-  margin-top: 20px
+  margin-top: 20px;
 }
+
+.order-form-main > div {
+  width: 100%; /* Tüm öğelerin genişliğini ayarla */
+}
+
+.textarea-container {
+  display: flex; /* Flexbox kullan */
+  align-items: center; /* Dikey ortala */
+  justify-content: center; /* Yatay ortala */
+  height: 40px; /* Container yüksekliği */
+  border: 1px solid #D9D9D9; /* Çerçeve rengi ve kalınlığı */
+  border-radius: 6px; /* Köşe yuvarlama */
+  padding: 10px; /* İçerik ile çerçeve arasında boşluk */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%; /* Textarea'nın genişliğini ayarla */
+  height: 50%; /* Textarea'nın yüksekliğini ayarla */
+  border: none; /* Çerçeve kaldır */
+  outline: none; /* Odaklandığında varsayılan kenarlığı kaldır */
+  resize: none; /* Kullanıcının boyutunu değiştirmesini engelle */
+  text-align: left; /* Yazıyı yatay olarak ortala */
+  padding: 0; /* Padding'i sıfırla */
+  box-sizing: border-box; /* Padding ve border'ı genişliğe dahil et */
+}
+
+.separator {
+  border-top: 1px solid #5F5F5F; /* Çizgi rengi ve kalınlığı */
+  margin: 20px 0; /* Üst ve alt boşluk */
+}
+
+.quantity-container {
+  display: flex; /* Flexbox kullanarak öğeleri yan yana hizala */
+  align-items: center; /* Dikey olarak ortala */
+}
+
+.quantity-button {
+  background-color: #FDC913; /* Buton rengi */
+  border: none; /* Kenarlık yok */
+  border-radius: 8px; /* Köşe yuvarlama */
+  width: 57px; /* Buton genişliği */
+  height: 56px; /* Buton yüksekliği */
+  font-size: 24px; /* Yazı boyutu */
+  cursor: pointer; /* İmleç değişimi */
+  margin: 0 5px; /* Butonlar arasında boşluk */
+  transition: background-color 0.3s; /* Hover efekti için geçiş */
+}
+
 
 .order-form-main h1,
 .order-form-main h3,
@@ -241,6 +291,25 @@ html, body {
   
 }
 
+.checkbox-container {
+  display: flex; /* Flexbox kullanarak öğeleri yan yana hizala */
+  flex-wrap: wrap; /* Öğelerin birden fazla satıra yayılmasına izin ver */
+  justify-content: flex-start; /* Öğeleri sola hizala */
+  margin-top: 50px; /* Yukarıdan boşluk ekle */
+  margin-bottom: 20px; /* Altına boşluk ekle */
+}
+
+.checkbox-container label {
+  flex: 1 1 30%; /* Her bir label öğesinin genişliğini ayarla (örneğin %30) */
+  display: flex; /* Flexbox kullanarak içeriği hizala */
+  align-items: center; /* Dikey olarak ortala */
+  margin-bottom: 10px; /* Her bir checkbox arasında boşluk bırak */
+}
+
+/* Son iki öğe için özel bir kural ekleyin */
+.checkbox-container label:nth-last-child(1) {
+  flex-basis: 63%; /* Son öğeyi tam genişlikte göster */
+}
 
 /* mobil görünüm ayarları */
 @media (max-width: 768px) {

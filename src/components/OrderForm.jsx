@@ -69,6 +69,8 @@ function OrderForm() {
 
                 <div>
                     <h3>Ek Malzemeler</h3>
+                    <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
+                    <div className="checkbox-container">
                     <label><input type="checkbox" /> Pepperoni</label>
                     <label><input type="checkbox" /> Sosis</label>
                     <label><input type="checkbox" /> Kanada Jambonu</label>
@@ -80,23 +82,31 @@ function OrderForm() {
                     <label><input type="checkbox" /> Jalepeno</label>
                     <label><input type="checkbox" /> Sarımsak</label>
                     <label><input type="checkbox" /> Biber</label>
+                    <label><input type="checkbox" /> Sucuk</label>
                     <label><input type="checkbox" /> Ananas</label>
                     <label><input type="checkbox" /> Kabak</label>
+                    </div>
                 </div>
 
-                <h2>Sipariş Detayları</h2>
+            
                 <div>
-                    <label>
-                        Sipariş Notu:
-                        <textarea rows="4" placeholder="Siparişine eklemek istediğin bir not var mı?"></textarea>
-                    </label>
+                <label>
+                    <h2>Sipariş Notu:</h2>
+                    <div className="textarea-container">
+                    <textarea rows="4" placeholder="Siparişine eklemek istediğin bir not var mı?"></textarea>
+                    </div>
+                </label>
+
                 </div>
-                <div>
-                    <label>
-                        Adet:
-                        <input type="number" min="1" defaultValue="1" />
-                    </label>
-                </div>
+
+                <div className="separator"></div>
+
+               <div className="quantity-container">
+                <label>
+                <button className="quantity-button">-</button>
+                </label>
+
+               </div>
 
                 <h2>Sipariş Toplamı</h2>
                 <p>Seçimler: 50 TL</p>
