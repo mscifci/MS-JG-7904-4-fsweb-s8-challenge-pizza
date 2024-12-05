@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+  }
+  
+.order-confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #CE2829; 
+    color: #FFFFFF; 
+    text-align: center;
+    padding-top: 0;
+    
+}
+
+.order-confirmation-content {
+    text-align: center;
+}
+
+.order-confirmation-logo {
+    width: 100%; 
+    max-width: 361.93px; 
+    height: auto; 
+    margin-top: -100px; 
+    margin-bottom: 40px; 
+}
+
+
+.order-confirmation-message {
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-weight: 300; 
+    font-size: 86px; 
+    line-height: 92px; 
+    letter-spacing: 1.5px; 
+    margin: 10px 0; 
+    color: #FFFFFF; 
+}
