@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../App.css';
+import '../styles/OrderForm.css'; 
 import logo from '../assets/logo.svg'; 
 
 function OrderForm() {
     const navigate = useNavigate();
+    const quantityInputRef = useRef(null);
 
     const handleLogoClick = () => {
         navigate('/');
     }
+
+    const handleIncrease = () => {
+        const input = quantityInputRef.current;
+        input.value = parseInt(input.value) + 1; 
+    };
+
+    const handleDecrease = () => {
+        const input = quantityInputRef.current;
+        if (input.value > 1) {
+            input.value = parseInt(input.value) - 1; 
+        }
+    };
 
     return (
         <div>
@@ -101,12 +114,13 @@ function OrderForm() {
 
                 <div className="separator"></div>
 
-               <div className="quantity-container">
-                <label>
-                <button className="quantity-button">-</button>
-                </label>
-
-               </div>
+                <div className="quantity-container">
+                    <label>
+                        <button className="quantity-button" onClick={handleDecrease}>-</button>
+                        <input type="number" min="1" defaultValue="1" className="quantity-input" ref={quantityInputRef} />
+                        <button className="quantity-button" onClick={handleIncrease}>+</button>
+                    </label>
+                </div>
 
                 <h2>Sipariş Toplamı</h2>
                 <p>Seçimler: 50 TL</p>
