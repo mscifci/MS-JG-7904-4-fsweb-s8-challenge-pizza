@@ -51,7 +51,7 @@ function OrderForm() {
 
                 <div className="selection-container">
                 <div>
-                    <h3>Boyut Seç:</h3>
+                    <h3>Boyut Seç</h3>
                     <div className="size-options">
                         <label>
                             <input type="radio" name="size" value="Küçük" />
@@ -68,14 +68,14 @@ function OrderForm() {
                      </div>
                 </div>
 
-                <div>
-                    <h3>Hamur Seç:</h3>
+                <div className="dough-selection">
+                    <h3>Hamur Seç</h3>
                     <select>
-                        <option>Normal</option>
+                        <option>Hamur Kalınlığı</option>
                         <option>Glutensiz</option>
                         <option>Kalın</option>
                         <option>Peynir Kenarlı</option>
-                        <option>Şefin Speysili</option>
+                        <option>Normal</option>
                     </select>
                 </div>
                 </div>
@@ -114,6 +114,7 @@ function OrderForm() {
 
                 <div className="separator"></div>
 
+                <div className="summary-container">
                 <div className="quantity-container">
                     <label>
                         <button className="quantity-button" onClick={handleDecrease}>-</button>
@@ -121,13 +122,21 @@ function OrderForm() {
                         <button className="quantity-button" onClick={handleIncrease}>+</button>
                     </label>
                 </div>
-
-                <h2>Sipariş Toplamı</h2>
-                <p>Seçimler: 50 TL</p>
-                <p>Toplam: 250 TL</p>
-                <button className="order-form-button">
-                    SİPARİŞ VER
-                </button>
+                <div className="order-summary">
+                    <h2>Sipariş Toplamı</h2>
+                    <div className="selections-container">
+                        <p className="selections">Seçimler</p>
+                        <p className="selections">25.00₺</p>
+                    </div>
+                    <div className="total-container">
+                        <p className="total">Toplam</p>
+                        <p className="total">110.50₺</p>
+                    </div>
+                    <button className="order-form-button">
+                        SİPARİŞ VER
+                    </button>
+                </div>
+                </div>
             </main>
         </div>
     );

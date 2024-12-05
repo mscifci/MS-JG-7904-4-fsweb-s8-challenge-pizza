@@ -1,15 +1,34 @@
-.order-form-header {
-    background-color: #CE2829 !important;
+/* Header Stilleri */
+html, body {
+    margin: 0; 
+    padding: 0; 
     width: 100%; 
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+.order-form-header {
+    background-color: #CE2829;
+    width: 100%; 
+    height: 100px;
     min-height: 60px; 
     display: flex; 
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center; 
-    padding: 20px; 
-    padding-bottom: 20px; 
+    padding: 10px; 
     box-sizing: border-box; 
-  }
+    
+}
+
+.logo {
+    height: auto; 
+    max-height: 80px; 
+    padding: 0; 
+    margin-top: 0; 
+    will-change: filter;
+    transition: filter 300ms;
+}
   
   .order-form-nav {
     padding-left: 500px;  
@@ -17,20 +36,22 @@
     color: white; 
     font-size: 16px;
     text-align: left;
-    width: 100%;
+    width: auto;
     box-sizing: border-box; 
     margin-top: 0; 
     padding-top: 10px; 
     padding-bottom: 10px; 
     background-color: #CE2829; 
-  }
+}
   
-  .bold-text {
+.bold-text {
     font-weight: bold; 
-  }
+}
   
-  .order-form-main {
+/* Ana İçerik Stilleri*/
+.order-form-main {
     padding: 20px; 
+    width: 100%;
     color: black; 
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
@@ -45,25 +66,27 @@
     padding-right: 500px; 
     text-align: left;
     margin-top: 20px;
-  }
+    
+}
   
-  .order-form-main > div {
+.order-form-main > div {
     width: 100%; 
-  }
+}
   
-  .textarea-container {
+  /* Metin Alanı Stilleri */
+.textarea-container {
     display: flex; 
     align-items: center;
     justify-content: center; 
-    height: 40px; 
+    height: 50px; 
     border: 1px solid #D9D9D9; 
     border-radius: 6px; 
     padding: 10px; 
     margin-bottom: 20px;
     margin-top: 20px;
-  }
+}
   
-  textarea {
+textarea {
     width: 100%; 
     height: 50%; 
     border: none; 
@@ -72,20 +95,23 @@
     text-align: left; 
     padding: 0; 
     box-sizing: border-box; 
-  }
+}
   
-  .separator {
+  /* Separatör Stili */
+.separator {
     border-top: 1px solid #5F5F5F; 
     margin: 20px 0; 
-  }
+}
   
-  .quantity-container {
+  /* Quantity Container Stili */
+.quantity-container {
     display: flex; 
-    align-items: center;
-    justify-content: flex-start;
-  }
+    align-items: flex-start; 
+    margin-right: 1rem;   
+}
   
-  .quantity-button {
+  /* Quantity Button Stilleri */
+.quantity-button {
     background-color: #FDC913; 
     border: none; 
     border-radius: 8px; 
@@ -95,13 +121,14 @@
     cursor: pointer; 
     margin: 0; 
     transition: background-color 0.3s; 
-  }
+}
   
-  .quantity-button:hover {
+.quantity-button:hover {
     background-color: #e0e0e0; 
-  }
+}
   
-  .quantity-input {
+  /* Quantity Input Stili */
+.quantity-input {
     width: 57px; 
     height: 56px; 
     text-align: center;
@@ -109,83 +136,274 @@
     border-radius: 8px; 
     margin: 0; 
     box-sizing: border-box; 
-  }
+}
   
-  .order-form-main h1,
-  .order-form-main h3,
-  .order-form-main h2 {
+  /* Başlık Stilleri */
+.order-form-main h1,
+.order-form-main h3,
+.order-form-main h2 {
     font-family: 'Barlow', sans-serif; 
     font-weight: 700; 
     font-size: 20px;
     margin: 0; 
-  }
-  
-  .price-rating-container {
+}
+
+  /* Fiyat ve Derecelendirme Stilleri */  
+.price-rating-container {
     display: flex; 
     align-items: center; 
     margin: 10px 0; 
-  }
+}
   
-  .price {
+.price {
     text-align: left; 
     margin-right: auto;
     font-weight: bold;
     font-size: 28px;
-  }
+}
   
-  .rating {
+.rating {
     text-align: center; 
     margin: 0 40px;
     font-weight: normal;
-  }
+}
   
-  .likes {
+.likes {
     text-align: right; 
     margin-left: 0;
     font-weight: normal;
-  }
-  
+}
+
+  /* Seçim Container Stilleri */
   .selection-container {
     display: flex; 
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between; 
+    align-items: center; 
     margin-bottom: 20px; 
     width: 100%;
-  }
+}
+
+.selection-container h3 {
+   /* Başlık boyutu */
+   margin: 0;
+    color: #333;
+    
+}
   
-  .size-options {
+.size-options {
     display: flex; 
     flex-direction: column; 
     margin-bottom: 10px; 
-  }
+    padding-top: 20px;
+}
   
-  .size-options label {
+.size-options label {
     margin-bottom: 10px; 
-  }
+}
   
-  .size-options label:last-child {
+.size-options label:last-child {
     margin-bottom: 0; 
-  }
+}
   
-  .selection-container > div {
-    margin-right: 150px; 
-  }
+.dough-selection {
+    margin: 20px 0;
+    flex: 1;
+}
+
+.dough-selection h3 {
+    margin: 0; 
+    color: #333; 
+}
+
+.dough-selection select {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    background-color: #fff; 
+    cursor: pointer; 
+    transition: border-color 0.3s; 
+    margin-top: 10px; 
+}
+
+.dough-selection select:focus {
+    border-color: #CE2829; 
+    outline: none; 
+}
+
+.selection-container > div {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.selection-container > div:last-child {
+    margin-right: 0;
+}
   
-  .checkbox-container {
+.dough-selection,
+.size-options {
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 10px; 
+}
+
+.dough-selection h3,
+.size-options h3 {
+    margin: 0; 
+    color: #333;
+}
+  /* Checkbox Container Stilleri */
+.checkbox-container {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: flex-start; 
     margin-top: 50px; 
     margin-bottom: 20px; 
-  }
+}
   
-  .checkbox-container label {
+.checkbox-container label {
     flex: 1 1 30%; 
     display: flex;
     align-items: center; 
     margin-bottom: 10px; 
-  }
+}
   
-  .checkbox-container label:nth-last-child(1) {
+.checkbox-container label:nth-last-child(1) {
     flex-basis: 63%; 
-  }
+}
+
+/* Sipariş Özeti Stili */
+.order-summary {
+    border: 1px solid #D9D9D9; 
+    border-radius: 6px; 
+    width: 100%; 
+    max-width: 330px;
+    box-sizing: border-box; 
+    background-color: #ffffff; 
+   margin-bottom: 100px;
+   display: flex;
+   flex-direction: column;
+}
+
+.order-summary h2 {
+    padding-top: 20px;
+    padding-left: 40px; 
+    margin-bottom: 5px; 
+     margin-top: 0; 
+}
+
+.order-summary p {
+    display: inline; 
+    margin-right: 50px; 
+    padding-left: 20px;    
+   
+}
+
+.order-summary p.selections {
+    font-size: 18px; 
+    color: #5F5F5F; 
+    font-weight: 600;
+}
+
+.order-summary p.total {
+    font-size: 18px; 
+    color: #CE2829; 
+    font-weight: 600;
+}
+
+/* Summary Container Stili */
+.summary-container {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    margin-top: 20px; 
+   
+}
+
+.selections-container,
+.total-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-left: 20px; 
+}
+
+.order-form-button {
+    width: 100%; 
+    display: block; 
+    padding: 1em; 
+    font-size: 1.2em; 
+    background-color: #FDC913; 
+    color: black; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.order-form-button:hover {
+    background-color: #292929;
+}
+
+/* Mobil Görünüm Stilleri */
+@media (max-width: 768px) {
+    .order-form-header {
+        padding: 10px; 
+        height: auto; 
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .logo {
+        max-height: 60px;
+    }
+
+    .order-form-nav {
+        padding-left: 0 !important; 
+        padding-right: 0 !important; 
+        font-size: 14px; 
+    }
+
+    .order-form-main {
+        padding: 0; 
+        margin-top: 10px; 
+        width: 100%; 
+        height: auto; 
+        max-width: 100%; 
+    }
+
+    .selection-container {
+        flex-direction: column; 
+        align-items: flex-start; 
+        width: 100%; 
+    }
+
+    .selection-container > div {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .dough-selection,
+    .size-options {
+        width: 100%;
+    }
+
+    .checkbox-container {
+        flex-direction: column; 
+        align-items: flex-start;
+        width: 100%; 
+    }
+
+    .order-summary {
+        max-width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .order-form-button {
+        font-size: 16px; 
+        padding: 0.8em; 
+        width: 100%;
+    }
+}
